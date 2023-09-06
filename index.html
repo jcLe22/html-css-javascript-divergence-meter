@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVERGENCE METER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>DIVERGENCE METER</h1>
+
+    <div class="glass-container">
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-1">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-1"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-1"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 id="constant">.</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="disabled"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="disabled"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-2">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-2"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-2"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-3">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-3"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-3"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-4">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-4"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-4"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-5">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-5"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-5"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-6">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-6"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-6"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <div class="device-container">
+            <div class="num-container">
+                <h2 class="count-el" id="num-7">0</h2>
+                <h2 class="pseudo-num0 under">0</h2>
+                <h2 class="pseudo-num1 under">1</h2>
+                <h2 class="pseudo-num2 under">2</h2>
+                <h2 class="pseudo-num3 under">3</h2>
+                <h2 class="pseudo-num4 under">4</h2>
+                <h2 class="pseudo-num5 under">5</h2>
+                <h2 class="pseudo-num6 under">6</h2>
+                <h2 class="pseudo-num7 under">7</h2>
+                <h2 class="pseudo-num8 under">8</h2>
+                <h2 class="pseudo-num9 under">9</h2>
+            </div>
+            <div class="btn-container">
+                <button class="increment" id="inc-7"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="decrement" id="dec-7"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-container">
+        <button class="log-timeline" id="log-data"><i class="fa-solid fa-play"></i></button>
+        <h3>TIMELINE LOG: </h3>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

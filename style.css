@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Phudu:wght@300&family=Playfair+Display:wght@400;500;600&family=Roboto+Mono:wght@100;300&display=swap");
+:root {
+  --bg-color1: rgb(53, 47, 68);
+  --bg-color2: rgb(92, 84, 112);
+  --bg-color3: rgb(185, 180, 199);
+  --bg-color4: rgb(250, 240, 230);
+  --backlight: rgb(220, 95, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 8vw;
+  text-align: center;
+  letter-spacing: 0.5vw;
+  color: rgb(237, 43, 42);
+  text-shadow: 0px 0px 10px rgb(241, 90, 89);
+}
+
+.glass-container {
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  align-items: space-evenly;
+}
+.glass-container .device-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(45deg, black, var(--bg-color1));
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  border-bottom: 15px solid whitesmoke;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.glass-container .device-container .num-container {
+  font-size: 12.5vw;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: rgb(255, 187, 92);
+  text-shadow: 0px 0px 10px rgb(248, 222, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glass-container .device-container .num-container .count-el, .glass-container .device-container .num-container #constant {
+  position: relative;
+  z-index: 10;
+}
+.glass-container .device-container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.glass-container .device-container .btn-container button {
+  height: 3vw;
+  width: 50%;
+  margin: 0.3vw;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.glass-container .device-container .btn-container .increment {
+  background: radial-gradient(circle, var(--bg-color3), var(--bg-color2));
+  color: var(--bg-color4);
+}
+.glass-container .device-container .btn-container .decrement {
+  background: radial-gradient(circle, var(--bg-color3), var(--bg-color2));
+  color: var(--bg-color4);
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.data-container .log-timeline {
+  height: 2vw;
+  width: 10vw;
+  font-size: 1vw;
+}
+.data-container h3 {
+  font-size: 2vw;
+  font-family: "Phudu", cursive;
+  letter-spacing: 0.5vw;
+  color: var(--bg-color4);
+}
+
+.disabled {
+  display: none;
+}
+
+.under {
+  color: rgba(53, 47, 68, 0.3);
+  position: absolute;
+  text-shadow: none;
+}
+
+.pseudo-num0 {
+  z-index: 9;
+}
+
+.pseudo-num1 {
+  z-index: 8;
+}
+
+.pseudo-num2 {
+  z-index: 7;
+}
+
+.pseudo-num3 {
+  z-index: 6;
+}
+
+.pseudo-num4 {
+  z-index: 5;
+}
+
+.pseudo-num5 {
+  z-index: 4;
+}
+
+.pseudo-num6 {
+  z-index: 5;
+}
+
+.pseudo-num7 {
+  z-index: 4;
+}
+
+.pseudo-num8 {
+  z-index: 3;
+}
+
+.pseudo-num9 {
+  z-index: 2;
+}/*# sourceMappingURL=style.css.map */
